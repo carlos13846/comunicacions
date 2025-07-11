@@ -1,0 +1,256 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  color: #2d2d2d;
+  line-height: 1.7;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header-nav {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  padding: 0 0 10px 0;
+  box-shadow: 0 2px 12px rgba(46,43,118,0.07);
+}
+
+.header-nav .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 18px 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-nav h1 {
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.header-nav nav a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.header-nav nav a:hover, .header-nav nav a:focus {
+  color: #ffe082 !important;
+  background: rgba(255,255,255,0.08);
+}
+
+.main-header {
+  display: none;
+  background-color: #4b6cb7;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+.main-header p {
+  font-size: 1.2em;
+  opacity: 0.95;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  margin: 60px auto 0 auto;
+  padding: 35px 30px;
+  max-width: 700px;
+}
+
+h2 {
+  color: #4b6cb7;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+h3 {
+  color: #2250a3;
+  font-size: 1.2rem;
+  margin-top: 32px;
+}
+
+ul, ol {
+  padding-left: 18px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  text-align: center;
+  padding: 18px 0 10px 0;
+  margin-top: 60px;
+  font-size: 1rem;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 1.08em;
+  letter-spacing: 0.2px;
+}
+
+.footer a, .footer a:visited {
+  color: #fbc2eb;
+  text-decoration: underline;
+}
+
+section img {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto 12px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section img:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 6px 18px rgba(75,108,183,0.18);
+}
+
+section li {
+  margin-bottom: 32px;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 30px 15px;
+  }
+
+  .main-header h1 {
+    font-size: 2em;
+  }
+
+  .main-header p {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header h1 {
+    font-size: 1.7em;
+  }
+
+  .main-header p {
+    font-size: 0.95em;
+  }
+
+  section h2 {
+    font-size: 1.3em;
+    padding-left: 10px;
+  }
+
+  ul, ol {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.95em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-nav .nav-container {
+    padding: 12px 4vw 0 4vw;
+  }
+  .container {
+    padding: 0 4vw;
+  }
+  .header-nav nav {
+    gap: 1.2rem;
+  }
+  section {
+    padding: 18px 6vw;
+    max-width: 98vw;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-nav h1 {
+    font-size: 1.2rem;
+  }
+  .header-nav nav {
+    gap: 0.7rem;
+    font-size: 0.98rem;
+  }
+  section {
+    padding: 12px 2vw;
+    margin: 30px auto 0 auto;
+  }
+}

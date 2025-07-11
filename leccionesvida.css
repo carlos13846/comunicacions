@@ -1,0 +1,44 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.blob {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at 60% 40%, #f78f3f 60%, #43c6ac 100%);
+  border-radius: 50% 60% 40% 60%/60% 40% 60% 50%;
+  opacity: 0.35;
+  z-index: 0;
+  filter: blur(10px);
+}
+main, .container {
+  position: relative;
+  z-index: 1;
+}
+section.lecciones {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  padding: 35px 30px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+section.lecciones h2 {
+  color: #4b6cb7;
+  margin-bottom: 30px;
+}
+section.lecciones ol {
+  margin-left: 20px;
+}
+section.lecciones li {
+  margin-bottom: 22px;
+}
+section.lecciones strong {
+  color: #f78f3f;
+  font-size: 1.08em;
+}

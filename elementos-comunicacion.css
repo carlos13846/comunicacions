@@ -1,0 +1,81 @@
+/* elementos-comunicacion.css */
+
+.blob {
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at 60% 40%, #4b6cb7 60%, #182848 100%);
+  opacity: 0.18;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.header-nav {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+}
+
+.header-nav h1 {
+  color: #fff;
+}
+
+.header-nav nav a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header-nav nav a:hover {
+  color: #ffe082 !important;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  margin: 60px auto 0 auto;
+  padding: 35px 30px;
+  max-width: 700px;
+}
+
+h2 {
+  color: #4b6cb7;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+b {
+  color: #2250a3;
+  font-size: 1.13rem;
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 18px 6vw;
+    max-width: 98vw;
+  }
+}

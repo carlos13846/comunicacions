@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.blob {
+  position: absolute;
+  bottom: -90px;
+  right: -90px;
+  width: 370px;
+  height: 370px;
+  background: radial-gradient(circle at 40% 60%, #43cea2 60%, #185a9d 100%);
+  border-radius: 60% 40% 60% 50%/50% 60% 40% 60%;
+  opacity: 0.30;
+  z-index: 0;
+  filter: blur(16px);
+}
+main, .container {
+  position: relative;
+  z-index: 1;
+}
